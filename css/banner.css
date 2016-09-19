@@ -1,0 +1,209 @@
+.homepage {
+    cursor: pointer;
+    width: 100%;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+}
+
+.homepage:hover .arrownav-cricle .arrownav-arrow {
+    visibility: visible;
+}
+
+.arrownav-cricle {
+    width: 100%;
+    height: 2px;
+    top: 40%;
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.arrownav-cricle .arrownav-arrow {
+    // display:none;
+    visibility: hidden;
+    position: absolute;
+    cursor: pointer;
+    height: 64px;
+    width: 64px;
+    background: none;
+    padding: 0 0;
+    border: 0;
+    box-sizing: content-box;
+    display: block;
+    z-index: 1000;
+    border-radius: 32px;
+    background-color: rgba(180, 180, 180, 0.25);
+    color: #848484;
+    font-size: 40px;
+    line-height: 60px;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.arrownav-cricle .arrownav-arrow-previous {
+    left: 18px;
+}
+
+.arrownav-cricle .arrow-icon-previous:before {
+    display: inline-block;
+    content: "";
+    border: 14px solid transparent;
+    border-right-color: rgb(132, 132, 132);
+    margin-right: 22px;
+    opacity: 0.6;
+}
+
+.arrownav-cricle .arrow-icon-next:before {
+    display: inline-block;
+    content: "";
+    border: 14px solid transparent;
+    border-left-color: rgb(132, 132, 132);
+    margin-left: 22px;
+    opacity: 0.6;
+}
+
+.arrownav-cricle .arrownav-arrow-next {
+    right: 18px;
+}
+
+.dashnav {
+    position: absolute;
+    z-index: 1000;
+    bottom: 170px;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+}
+
+.dashnav ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dashnav li {
+    list-style: none;
+    margin: 0 5px;
+    padding: 0;
+    width: 50px;
+    height: 22px;
+    float: left;
+    position: relative;
+}
+
+.dashnav .dashnav-item {
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    outline: none;
+    position: absolute;
+    padding: 10px 0;
+    opacity: 1;
+    -webkit-transition: opacity 500ms ease;
+    transition: opacity 500ms ease;
+    box-sizing: content-box;
+}
+
+.dashnav .dashnav-item.current .dashnav-progress {
+    opacity: 1;
+}
+
+.dashnav .dashnav-dash {
+    position: relative;
+    z-index: 1;
+    height: 2px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.dashnav .dashnav-progress {
+    opacity: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 50px;
+    transform:scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    height: 100%;
+    background: gray;
+    -moz-transition: transform 1.5s;
+   /* Firefox 4 */
+   -webkit-transition: transform 1.5s;
+   /* Safari and Chrome */
+   -o-transition: transform 1.5s;
+   /* Opera */
+}
+
+.banner-wrapper {
+    height: 100%;
+    width: 100%;
+    -moz-transition: transform 1.5s;
+    /* Firefox 4 */
+    -webkit-transition: transform 1.5s;
+    /* Safari and Chrome */
+    -o-transition: transform 1.5s;
+    /* Opera */
+}
+
+.banner-wrapper .banner-item {
+    will-change: transform;
+    width: 100%;
+    height: 88%;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    -moz-transition: transform 1.5s;
+    /* Firefox 4 */
+    -webkit-transition: transform 1.5s;
+    /* Safari and Chrome */
+    -o-transition: transform 1.5s;
+    /* Opera */
+}
+
+.banner-item-iphone {
+    background-color: #000000;
+}
+
+.banner-image-watch {
+    background-color: #f3f3f3;
+}
+
+.banner-item-event {
+}
+
+.banner-image-airpods {
+    background-color: #ffffff;
+}
+
+.banner-item-event {
+    background-color: #000000;
+}
+
+.banner-wrapper .banner-image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: bottom center;
+}
+
+.banner-image-iphone {
+    background-image: url(../images/iphone.jpg);
+}
+
+.banner-image-airpods {
+    background-image: url(../images/airpods.jpg);
+}
+
+.banner-image-watch {
+    background-image: url(../images/watch.jpg);
+}
+
+.banner-image-event {
+    background-image: url(../images/event.jpg);
+}
